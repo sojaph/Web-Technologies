@@ -1,4 +1,28 @@
+body{
+    padding: 50px;
+    margin-top: 0;
+    text-align: center;
+    background-color:rgba(4, 18, 24, 0.658);
+    font-family: "Comic Sans MS";
+    color:#041218d3
+}
 table{
-    font-size: 25px;
-    color: red;
+    text-align:center;
+    border-color: rgba(4, 18, 24, 0.658);
+}
+img{
+    border-radius: 70px;
+
+}
+a{
+    color: blue;
+}
+h3{
+    text-transform: capitalize;
+}
+.blue-box{
+    background-color: #65d19f;
+    columns: md -12px;
+    border-radius: 50px;
+    padding: 30px;
 }
