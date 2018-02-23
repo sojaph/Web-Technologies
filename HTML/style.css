@@ -23,7 +23,20 @@ h3{
 }
 .blue-box{
     background-color: #65d19f;
-    columns: md -12px;
     border-radius: 50px;
     padding: 30px;
 }
+h1{
+    color: #65d19f
+}
+@keyframes example{
+    from {background-color: red;}
+    to{background-color: yellow;}
+}
+/*example{
+    animation-name: example;
+    animation-duration: 4s;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}*/
