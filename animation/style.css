@@ -1,0 +1,174 @@
+    /* The animation code */
+@keyframes example1 {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+/* The element to apply the animation to */
+.example1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example1;
+  animation-duration: 4s;
+}
+
+/* The animation code */
+@keyframes example2 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+/* The element to apply the animation to */
+.example2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example2;
+  animation-duration: 4s;
+}
+
+/* The animation code */
+@keyframes example3 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 300px;
+    top: 0px;
+    animation-delay: 1s;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* The element to apply the animation to */
+.example3 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#animated_div {
+  width: 100px;
+  height: 47px;
+  background: #92b901;
+  color: #ffffff;
+  position: absolute;
+  margin-right: 500px;
+  top:0;
+  right:0;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  animation: animated_div 5s 1;
+  animation-iteration-count: infinite;
+  -moz-animation: animated_div 5s 1;
+  -webkit-animation: animated_div 5s 1;
+  -o-animation: animated_div 5s 1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animated_div {
+  0% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+  25% {
+    transform: rotate(20deg);
+    left: 1000px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 1000px;
+  }
+  55% {
+    transform: rotate(0deg);
+    left: 1000px;
+  }
+  70% {
+    transform: rotate(0deg);
+    left: 1000px;
+    background: #1ec7e6;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 500px;
+  }
+}
+.example4 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example4; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example4;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example4 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:0px; top:100px;}
+  50%  {background-color:blue;left:100px; top:100px; }
+  75%  {background-color:green;left:100px; top:0px; }
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example4 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:0px; top:100px;}
+    50%  {background-color:blue;left:100px; top:100px; }
+    75%  {background-color:green;left:100px; top:0px; }
+    100% {background-color:red; left:0px; top:0px;}
+}
+#container{
+    position:relative;
+}
+#delay-box{
+    position: absoute;
+    top:0;
+    right:0;
+}
