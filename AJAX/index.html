@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <h1>Currency converter</h1>
+        <div class="orange-box">
+            <div class="row">
+                <img src="https://cdn0.iconfinder.com/data/icons/banking-and-finance-2-3/48/58-512.png" 
+                alt="currency-symbols" class="col-4">
+                <div class="col-4">
+                    <form>
+                            <div class="center">
+                                <p>From:</p>
+                                <select name="from" id="from">
+                                    <option value="EUR">Euro</option>
+                                    <option value="USD">US Dollars</option>
+                                    <option value="GBP">British Pounds</option>
+                                </select>
+                            </div>
+                            <div class="center">
+                                <p>To:</p>
+                                <select name="to" id="to">
+                                    <option value="GBP">British Pounds</option>
+                                    <option value="EUR">Euro</option>
+                                    <option value="USD">US Dollars</option>   
+                                </select>
+                            </div>       
+                        <br/>
+                        <input type="number" id="money">
+                        <input type="submit" id="submit">
+                    </form>
+                    <textarea id="answer" rows="1" cols="10"></textarea>
+                </div>
+                <img src="https://cdn0.iconfinder.com/data/icons/banking-and-finance-2-3/48/58-512.png"
+                alt="currency-symbols" class="col-4">
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>    
+</html>
+

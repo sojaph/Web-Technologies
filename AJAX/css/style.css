@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+}
+.orange-box{
+    text-align:center;
+    background-color: orange;
+    border-radius: 50px;
+}
+textarea{
+   margin-bottom: 100px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.col-4 {width: 33.33%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.center{
+    margin:auto;
+    width: 50%;
+}
